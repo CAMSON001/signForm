@@ -89,42 +89,52 @@ nav li:hover {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-section{
+.OurSection{
     height: 100%;
     position: relative;
     left: 4%;
     margin-left: 10px;
+    transition: left 0.7s ease ;
 }
-section h1, h2, h4,p {
+
+.OurSection.active{
+    position: relative;
+    left: 50%;
+   
+
+}
+
+
+.OurSection h1, h2, h4,p {
     color: #fff
 }
-section h1{
+.OurSection h1{
     position: relative;
     margin-bottom: 70px;
     right: 60px;
     top: 5px;
     font-size: 40px;
 }
-section h2{
+.OurSection h2{
     position: relative;
     left: 6%;
     font-size: 35px;
 }
-section h4{
+.OurSectionion h4{
     position: relative;
     left: 2px;
     bottom: 20px;
     margin-bottom: 0px;
     font-size: 20px;
 }
-section #p1
+.OurSection #p1
 {
     position: relative;
     font-size: 10px;
     right: 30px;
 }
 
-section #p2{
+.OurSection #p2{
     position: relative;
     font-size: 10px;
     left: 25px;
@@ -163,11 +173,13 @@ section #p2{
     background: linear-gradient(#0e0e0e87, #0601019a);
     -webkit-backdrop-filter: blur(0px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
+    
 }
 
 .signIn.active{
     display: none;
+    
+
 }
 
 .signIn h4{
@@ -302,11 +314,16 @@ section #p2{
     background: linear-gradient(#0e0e0e87, #0601019a);
     -webkit-backdrop-filter: blur(0px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
 
 }
 
 .signUp.active{
     display: block;
+    position: relative;
+    left: -45%;
+    transition: left 0.7s ease ;
+
 }
 
 .signUp h4{
