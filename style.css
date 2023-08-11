@@ -33,10 +33,12 @@ nav li {
     padding-right: 10px ;
     font-size: small;
     
+    
 }
 
 nav li:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 #searchBar{
     position: relative;
@@ -49,6 +51,7 @@ nav li:hover {
     border: 1px #fff solid;
     width: 200px;
     margin-top: 10px;
+    color: #fff;
     
     
 }
@@ -58,6 +61,11 @@ nav li:hover {
     height: 40px;
     position: absolute;
     right: 10px;
+    
+}
+#searchBar img:hover{
+    cursor: pointer;
+    
 }
 
 
@@ -158,6 +166,10 @@ section #p2{
 
 }
 
+.signIn.active{
+    display: none;
+}
+
 .signIn h4{
     position: relative;
     left: 38%;
@@ -181,6 +193,8 @@ section #p2{
     width: 80%;
     height: 30px;
     margin-top: 10px;
+    color: #fff;
+    
     
 }
 
@@ -227,7 +241,7 @@ section #p2{
 
 .signIn button{
     position: relative;
-    left: 11%;
+    left: 13%;
     top: 10px;
     width: 75%;
     height: 30px;
@@ -235,13 +249,14 @@ section #p2{
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px #777;
+    color: #fff;
 }
 .signIn button:hover{
     background: #db7272ac;
     cursor: pointer;
 }
 
-.signUp{
+.signUpCall{
     position: relative;
     top: 15px;
     display: flex;  
@@ -250,15 +265,154 @@ section #p2{
 
 }
 
-.signUp p{
+.signUpCall p{
+    position: relative;
+    left: 1%;
+    font-size: 10px;
+    font-weight:normal;
+}
+.signUpCall a{
+    position: relative;
+    left: 5%;
+    font-size: 10px;
+    color: #fff;
+    
+}
+
+
+
+
+
+
+
+/* Sign Up form */
+
+
+
+
+.signUp{
+    position: relative;
+    left: 10.4%;
+    width: 45%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0px);
+    background: linear-gradient(#0e0e0e87, #0601019a);
+    -webkit-backdrop-filter: blur(0px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+}
+
+.signUp.active{
+    display: block;
+}
+
+.signUp h4{
+    position: relative;
+    left: 38%;
+    font-size: 28px;
+    font-size: 28px;
+    top: 20px;
+    margin-bottom: 15%;
+
+
+}
+
+.signUp input{
+    position: relative;
+    left: 30px;
+    background: none;
+    border-color: #fff;
+    border: 1px #fff solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    height: 30px;
+    margin-top: 10px;
+    color: #fff;
+    
+    
+}
+
+.signUp img{
+    position: relative;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+
+.privacy{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.privacy input{
+    position: relative;
+    bottom: 2px;
+    width: 15px;
+
+}
+.privacy  p {
     position: relative;
     left: 9%;
     font-size: 10px;
     font-weight:normal;
 }
-.signUp a{
+
+.privacy a{
+    position: relative;
+    left: 40%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: normal;
+    
+}
+.privacy a:hover{
+    text-decoration: underline;
+    color: #aa2020fa;
+}
+
+.signUp button{
     position: relative;
     left: 13%;
+    top: 10px;
+    width: 75%;
+    height: 30px;
+    background: #4aef63bd;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #777;
+    color: #fff;
+}
+.signUp button:hover{
+    background: #99cda19c;
+    cursor: pointer;
+}
+
+.signInCall{
+    position: relative;
+    top: 15px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signInCall p{
+    position: relative;
+    left: 1%;
+    font-size: 10px;
+    font-weight:normal;
+}
+.signInCall a{
+    position: relative;
+    left: 5%;
     font-size: 10px;
     color: #fff;
     
